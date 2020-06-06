@@ -12,50 +12,55 @@ router.get("/", (req, res) => {
   utils.getFile("views/index.html", res);
 });
 
-router.get("/courses.html", (req, res) => {
-  res.writeHead(httpStatus.OK, contentTypes.html);
-  utils.getFile("views/courses.html", res);
-});
+// router.get("/courses.html", (req, res) => {
+//   res.writeHead(httpStatus.OK, contentTypes.html);
+//   utils.getFile("views/courses.html", res);
+// });
 
 //adding about page
 router.get("/about.html", (req, res) => {
   res.writeHead(httpStatus.OK, contentTypes.html);
   utils.getFile("views/about.html", res);
 });
+
+router.get("/mass.html", (req, res) => {
+  res.writeHead(httpStatus.OK, contentTypes.html);
+  utils.getFile("views/mass.html", res);
+});
 //adding belle info page
-router.get("/belle.html", (req, res) => {
-  res.writeHead(httpStatus.OK, contentTypes.html);
-  utils.getFile("views/belle.html", res);
-});
+// router.get("/belle.html", (req, res) => {
+//   res.writeHead(httpStatus.OK, contentTypes.html);
+//   utils.getFile("views/belle.html", res);
+// });
 
-router.get("/contact.html", (req, res) => {
-  res.writeHead(httpStatus.OK, contentTypes.html);
-  utils.getFile("views/contact.html", res);
-});
+// router.get("/contact.html", (req, res) => {
+//   res.writeHead(httpStatus.OK, contentTypes.html);
+//   utils.getFile("views/contact.html", res);
+// });
 
-router.post("/", (req, res) => {
-  res.writeHead(httpStatus.OK, contentTypes.html);
-  utils.getFile("views/thanks.html", res);
-});
+// router.post("/", (req, res) => {
+//   res.writeHead(httpStatus.OK, contentTypes.html);
+//   utils.getFile("views/thanks.html", res);
+// });
 
-router.get("/graph.png", (req, res) => {
-  res.writeHead(httpStatus.OK, contentTypes.png);
-  utils.getFile("public/images/graph.png", res);
-});
+// router.get("/graph.png", (req, res) => {
+//   res.writeHead(httpStatus.OK, contentTypes.png);
+//   utils.getFile("public/images/graph.png", res);
+// });
 
-router.get("/people.jpg", (req, res) => {
+// router.get("/people.jpg", (req, res) => {
+//   res.writeHead(httpStatus.OK, contentTypes.jpg);
+//   utils.getFile("public/images/people.jpg", res);
+// });
+
+router.get("/mass.png", (req, res) => {
   res.writeHead(httpStatus.OK, contentTypes.jpg);
-  utils.getFile("public/images/people.jpg", res);
+  utils.getFile("public/images/mass.png", res);
 });
 
-router.get("/product.jpg", (req, res) => {
-  res.writeHead(httpStatus.OK, contentTypes.jpg);
-  utils.getFile("public/images/product.jpg", res);
-});
-
-router.get("/confetti_cuisine.css", (req, res) => {
+router.get("/custom.css", (req, res) => {
   res.writeHead(httpStatus.OK, contentTypes.css);
-  utils.getFile("public/css/confetti_cuisine.css", res);
+  utils.getFile("public/css/custom.css", res);
 });
 
 router.get("/bootstrap.css", (req, res) => {
