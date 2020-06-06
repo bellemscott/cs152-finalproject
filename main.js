@@ -58,6 +58,11 @@ router.get("/mass.png", (req, res) => {
   utils.getFile("public/images/mass.png", res);
 });
 
+router.get("/baker.jpg", (req, res) => {
+  res.writeHead(httpStatus.OK, contentTypes.jpg);
+  utils.getFile("public/images/baker.jpg", res);
+});
+
 router.get("/custom.css", (req, res) => {
   res.writeHead(httpStatus.OK, contentTypes.css);
   utils.getFile("public/css/custom.css", res);
